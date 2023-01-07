@@ -1,8 +1,6 @@
 package Strings;
 
-import java.util.Scanner;
-
-public class Strings {
+public class Q1_Strings {
 
     public static void printLetters(String str){
 
