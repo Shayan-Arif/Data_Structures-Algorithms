@@ -85,6 +85,24 @@ class ArraysExample{
     }
 
 
+    public static int LastOccurance (int[] arr , int key ){
+
+        int index = -1;
+
+        for(int i = 0 ; i < arr.length ; i++){
+
+            if(arr[i] == key ){
+
+                index = i;
+
+            }
+
+
+        }
+
+
+return index;
+    }
 
 
 
@@ -104,13 +122,14 @@ class Main{
 
 
         int arr [] = {1,2,3,4,5};
-        int arr1 [] = {5,76,77,3,2,66,3,3,3,3,3,3,3,3};
+        int arr1 [] = {5,76,77,3,2,66,3,3,5};
 
         //System.out.println(ArraysExample.sumOfArray(arr));
         //System.out.println(ArraysExample.maxOfArray(arr1));
         //System.out.println(ArraysExample.linearSearch(arr1, 656));
         //ArraysExample.cloneArray();
-        System.out.println(ArraysExample.CountOccurances(arr1, 0));
+        //System.out.println(ArraysExample.CountOccurances(arr1, 0));
+        //System.out.println(ArraysExample.LastOccurance(arr1, 3));
 
 
 
