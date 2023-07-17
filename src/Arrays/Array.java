@@ -104,12 +104,23 @@ class ArraysExample{
 return index;
     }
 
+    //count the number of elements strictly greater than the value x 
 
 
+    public static int StrictlyGreaterOccurances (int [] arr , int key){
+
+        int count = 0 ;
+        for(int i = 0 ; i < arr.length ; i++){
+            if(arr[i] > key ){
+                count ++;
+            }
+        }
 
 
+        return count;
 
 
+    }
 
 
 }
@@ -130,6 +141,8 @@ class Main{
         //ArraysExample.cloneArray();
         //System.out.println(ArraysExample.CountOccurances(arr1, 0));
         //System.out.println(ArraysExample.LastOccurance(arr1, 3));
+        System.out.println(ArraysExample.StrictlyGreaterOccurances(arr1, 20));
+
 
 
 
